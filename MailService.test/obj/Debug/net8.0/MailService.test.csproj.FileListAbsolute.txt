@@ -1,0 +1,7 @@
+C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\MailService\MailService.test\bin\Debug\net8.0\CoverletSourceRootsMapping_MailService.test
+C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\MailService\MailService.test\obj\Debug\net8.0\MailService.test.csproj.AssemblyReference.cache
+C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\MailService\MailService.test\obj\Debug\net8.0\MailService.test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\MailService\MailService.test\obj\Debug\net8.0\MailService.test.AssemblyInfoInputs.cache
+C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\MailService\MailService.test\obj\Debug\net8.0\MailService.test.AssemblyInfo.cs
+C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\MailService\MailService.test\obj\Debug\net8.0\MailService.test.csproj.CoreCompileInputs.cache
+C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\MailService\MailService.test\obj\Debug\net8.0\MailService.test.sourcelink.json

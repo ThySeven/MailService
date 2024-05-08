@@ -1,29 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Claras PC\\source\\repos\\MailService\\",
+  "WorkspaceRootPath": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\claras pc\\source\\repos\\mailservice\\mailservice\\models\\automail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|solutionrelative:mailservice\\models\\automail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\mailservice\\mailservice\\services\\mailreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|solutionrelative:mailservice\\services\\mailreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\claras pc\\source\\repos\\mailservice\\mailservice\\services\\deliveryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|solutionrelative:mailservice\\services\\deliveryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\mailservice\\mailservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|solutionrelative:mailservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\claras pc\\source\\repos\\mailservice\\mailservice\\services\\mailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\mailservice\\mailservice\\services\\mailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|solutionrelative:mailservice\\services\\mailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\claras pc\\source\\repos\\mailservice\\mailservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\mailservice\\mailservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|solutionrelative:mailservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E194766E-7FC3-4820-82FC-984D0CE0AE04}|MailService.test\\MailService.test.csproj|c:\\users\\claras pc\\source\\repos\\mailservice\\mailservice.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E194766E-7FC3-4820-82FC-984D0CE0AE04}|MailService.test\\MailService.test.csproj|solutionrelative:mailservice.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\mailservice\\mailservice\\services\\deliveryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|solutionrelative:mailservice\\services\\deliveryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\claras pc\\source\\repos\\mailservice\\mailservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\mailservice\\mailservice\\models\\automail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|solutionrelative:mailservice\\models\\automail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\mailservice\\mailservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|solutionrelative:mailservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,25 +38,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Program.cs",
+              "RelativeDocumentMoniker": "MailService\\Program.cs",
+              "ToolTip": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Program.cs",
+              "RelativeToolTip": "MailService\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:10:40.784Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MailReceiver.cs",
+              "DocumentMoniker": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Services\\MailReceiver.cs",
+              "RelativeDocumentMoniker": "MailService\\Services\\MailReceiver.cs",
+              "ToolTip": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Services\\MailReceiver.cs",
+              "RelativeToolTip": "MailService\\Services\\MailReceiver.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T14:29:19.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MailSender.cs",
+              "DocumentMoniker": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Services\\MailSender.cs",
+              "RelativeDocumentMoniker": "MailService\\Services\\MailSender.cs",
+              "ToolTip": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Services\\MailSender.cs",
+              "RelativeToolTip": "MailService\\Services\\MailSender.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T07:53:25.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AutoMail.cs",
-              "DocumentMoniker": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\Models\\AutoMail.cs",
+              "DocumentMoniker": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Models\\AutoMail.cs",
               "RelativeDocumentMoniker": "MailService\\Models\\AutoMail.cs",
-              "ToolTip": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\Models\\AutoMail.cs",
+              "ToolTip": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Models\\AutoMail.cs",
               "RelativeToolTip": "MailService\\Models\\AutoMail.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T07:59:58.741Z",
               "EditorCaption": ""
@@ -60,64 +95,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService.test\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "MailService.test\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService.test\\UnitTest1.cs",
-              "RelativeToolTip": "MailService.test\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T07:57:24.152Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "DeliveryService.cs",
-              "DocumentMoniker": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\Services\\DeliveryService.cs",
+              "DocumentMoniker": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Services\\DeliveryService.cs",
               "RelativeDocumentMoniker": "MailService\\Services\\DeliveryService.cs",
-              "ToolTip": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\Services\\DeliveryService.cs",
+              "ToolTip": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Services\\DeliveryService.cs",
               "RelativeToolTip": "MailService\\Services\\DeliveryService.cs",
-              "ViewState": "AQIAAAIAAABwZmZmZuYswBEAAAA1AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T07:53:27.483Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MailSender.cs",
-              "DocumentMoniker": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\Services\\MailSender.cs",
-              "RelativeDocumentMoniker": "MailService\\Services\\MailSender.cs",
-              "ToolTip": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\Services\\MailSender.cs",
-              "RelativeToolTip": "MailService\\Services\\MailSender.cs",
-              "ViewState": "AQIAAAkAAACozMzMzGwzwBkAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T07:53:25.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Worker.cs",
-              "DocumentMoniker": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\Worker.cs",
+              "DocumentMoniker": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Worker.cs",
               "RelativeDocumentMoniker": "MailService\\Worker.cs",
-              "ToolTip": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\Worker.cs",
+              "ToolTip": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Worker.cs",
               "RelativeToolTip": "MailService\\Worker.cs",
-              "ViewState": "AQIAABsAAADAmZmZmZkRwDQAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T07:53:13.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "MailService\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Controllers\\AuthController.cs",
               "RelativeToolTip": "MailService\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA1AAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAEwBQAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T07:51:24.161Z"
             }
