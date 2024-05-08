@@ -32,7 +32,8 @@ public class EmailReceiver
             client.Inbox.Open(FolderAccess.ReadWrite);
 
             // Search for unread messages
-            var uids = client.Inbox.Search(SearchQuery.NotSeen);
+            var uids = client.Inbox.Search(SearchQuery.Not(SearchQuery.HasGMailLabel("Received")));
+
 
             foreach (var uid in uids)
             {
@@ -43,7 +44,7 @@ public class EmailReceiver
                 ProcessEmailMessage(message);
 
                 // Mark the message as "Seen"
-                client.Inbox.AddFlags(uid, MessageFlags.Seen, true);
+                client.Inbox.SetLabels(uid, new List<string> { "Received" }, true);
             }
 
             // Disconnect from the server
