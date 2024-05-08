@@ -96,3 +96,4 @@ C:\Users\Claras PC\source\repos\MailService\MailService\obj\Debug\net8.0\scopedc
 C:\Users\Claras PC\source\repos\MailService\MailService\obj\Debug\net8.0\MailServ.8BBCDB9B.Up2Date
 C:\Users\Claras PC\source\repos\MailService\MailService\obj\Debug\net8.0\MailService.genruntimeconfig.cache
 C:\Users\Claras PC\source\repos\MailService\MailService\obj\Debug\net8.0\ref\MailService.dll
+C:\Users\Claras PC\source\repos\MailService\MailService\obj\Debug\net8.0\MailService.sourcelink.json

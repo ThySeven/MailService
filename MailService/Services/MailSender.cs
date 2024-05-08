@@ -2,6 +2,7 @@
 using System.Net;
 using System.Text.Json;
 using MailService.Models;
+using System.Text;
 
 public class EmailSender
 {
@@ -13,7 +14,7 @@ public class EmailSender
         _smtpClient = new SmtpClient("smtp.gmail.com")
         {
             Port = 587,
-            Credentials = new NetworkCredential("gronogolsen@gmail.com", "vaske123"),
+            Credentials = new NetworkCredential("gronogolsen@gmail.com", "xvgu reqj vpod mbms"),
             EnableSsl = true
         };
     }
@@ -28,9 +29,9 @@ public class EmailSender
             // Create a new email message
             var message = new MailMessage("gronogolsen@gmail.com", autoMail.ReceiverMail)
             {
-                Subject = "New Mail",
-                Body = jsonString,
-                IsBodyHtml = false
+                Subject = autoMail.Header,
+                Body = autoMail.Content,
+                IsBodyHtml = true
             };
 
             // Send the email
