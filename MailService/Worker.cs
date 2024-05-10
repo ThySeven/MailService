@@ -41,7 +41,7 @@ namespace MailService
             {
                 var mail = ea.Body.ToArray();
                 var uftString = Encoding.UTF8.GetString(mail);
-                var message = JsonSerializer.Deserialize<AutoMail>(uftString);
+                var message = JsonSerializer.Deserialize<MailModel>(uftString);
                 Console.WriteLine($" [x] Received {message}");
 
                 await _deliveryService.SendAsync(message);

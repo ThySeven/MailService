@@ -17,13 +17,13 @@ namespace MailService.Services
             _emailReceiver = new EmailReceiver();
         }
 
-        public async Task SendAsync(AutoMail autoMail)
+        public async Task SendAsync(MailModel mail)
         {
             // Send the mail model via email
-            await _emailSender.SendMailAsync(autoMail);
+            await _emailSender.SendMailAsync(mail);
         }
 
-        public async Task ReceiveAsync(AutoMail autoMail)
+        public async Task ReceiveAsync(MailModel mail)
         {
             _emailReceiver.ListenAndSendToRabbitMQ();
         }

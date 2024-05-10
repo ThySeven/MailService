@@ -19,18 +19,18 @@ public class EmailSender
         };
     }
 
-    public async Task SendMailAsync(AutoMail autoMail)
+    public async Task SendMailAsync(MailModel mail)
     {
         try
         {
             // Convert MailModel to JSON string
-            var jsonString = JsonSerializer.Serialize(autoMail);
+            var jsonString = JsonSerializer.Serialize(mail);
 
             // Create a new email message
-            var message = new MailMessage("gronogolsen@gmail.com", autoMail.ReceiverMail)
+            var message = new MailMessage("gronogolsen@gmail.com", mail.ReceiverMail)
             {
-                Subject = autoMail.Header,
-                Body = autoMail.Content,
+                Subject = mail.Header,
+                Body = mail.Content,
                 IsBodyHtml = true
             };
 

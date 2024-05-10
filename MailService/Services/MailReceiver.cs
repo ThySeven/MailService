@@ -32,7 +32,7 @@ public class EmailReceiver
             client.Inbox.Open(FolderAccess.ReadWrite);
 
             // Search for unread messages
-            var uids = client.Inbox.Search(SearchQuery.Not(SearchQuery.HasGMailLabel("Received")));
+            var uids = client.Inbox.Search(SearchQuery.Not(SearchQuery.HasGMailLabel("Received").Or(SearchQuery.SubjectContains("RE:").Or(SearchQuery.SubjectContains("SV:").Or(SearchQuery.SubjectContains("VS:").Or(SearchQuery.SubjectContains("FWD:")))))));
 
 
             foreach (var uid in uids)
@@ -62,18 +62,16 @@ public class EmailReceiver
             string subject = message.Subject;
             string body = message.TextBody;
 
-            // Create an instance of AutoMail
-            var autoMail = new AutoMail
+            // Create an instance of mail
+            var mail = new MailModel
             {
-                SenderMail = receiverMail,
                 ReceiverMail = senderMail,
                 Header = "Tak for din henvendelse",
                 Content = File.ReadAllText("Models/Compliments.html"),
-                DateTime = DateTime.Now, // You may want to use the email's timestamp if available
             };
 
             // Send the email to RabbitMQ
-            SendToRabbitMQ(autoMail);
+            SendToRabbitMQ(mail);
         }
         catch (Exception ex)
         {
@@ -81,7 +79,7 @@ public class EmailReceiver
         }
     }
 
-    private void SendToRabbitMQ(AutoMail autoMail)
+    private void SendToRabbitMQ(MailModel mail)
     {
         try
         {
@@ -91,7 +89,7 @@ public class EmailReceiver
             using var channel = connection.CreateModel();
 
             // Serialize the received email data
-            var serializedEmail = JsonSerializer.Serialize(autoMail);
+            var serializedEmail = JsonSerializer.Serialize(mail);
 
             // Publish the serialized email data to RabbitMQ
             channel.QueueDeclare(queue: "MailQueue",
