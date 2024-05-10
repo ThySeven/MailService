@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService.test\\MailService.test.csproj": {}
+    "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService.test\\MailService.test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService.test\\MailService.test.csproj": {
+    "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService.test\\MailService.test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService.test\\MailService.test.csproj",
+        "projectUniqueName": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService.test\\MailService.test.csproj",
         "projectName": "MailService.test",
-        "projectPath": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService.test\\MailService.test.csproj",
-        "packagesPath": "C:\\Users\\Claras PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService.test\\obj\\",
+        "projectPath": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService.test\\MailService.test.csproj",
+        "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService.test\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Claras PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\MailService.csproj": {
-                "projectPath": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\MailService.csproj"
+              "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\MailService.csproj": {
+                "projectPath": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\MailService.csproj"
               }
             }
           }
@@ -99,21 +94,17 @@
         }
       }
     },
-    "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\MailService.csproj": {
+    "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\MailService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\MailService.csproj",
+        "projectUniqueName": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\MailService.csproj",
         "projectName": "MailService",
-        "projectPath": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\MailService.csproj",
-        "packagesPath": "C:\\Users\\Claras PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Claras PC\\source\\repos\\MailService\\MailService\\obj\\",
+        "projectPath": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\MailService.csproj",
+        "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Claras PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -121,7 +112,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -145,9 +135,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.5.0, )"
             },
             "Moq": {
               "target": "Package",

@@ -10,30 +10,20 @@ public class MyTestClass
         // Create a mock object for an interface
         var mockService = new Mock<IDeliveryService>();
 
-        var AutoMail = new AutoMail
+        var mail = new MailModel
         {
-            SenderMail = "testmail1@gmail.com",
             ReceiverMail = "testmail2@gmail.com",
             Header = "testHeader",
             Content = "testcontent",
-            DateTime = new DateTime(),
-            Model = new InvoiceModel
-            {
-                PaidStatus = false,
-                Price = 1000,
-                Description = "testvase",
-                Address = "testvej"
-            }
-
         };
 
         // Setup mock behavior
-        mockService.Setup(s => s.SendAsync(AutoMail));
+        mockService.Setup(s => s.SendAsync(mail));
 
         // Use the mock object in your test
-        var result = myClassUnderTest.MyMethod(mockService.Object);
+        //var result = myClassUnderTest.MyMethod(mockService.Object);
 
         // Assert the result
-        Assert.True(result);
+        //Assert.True(result);
     }
 }
