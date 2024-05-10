@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\mailservice\\mailservice\\services\\deliveryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|solutionrelative:mailservice\\services\\deliveryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\mailservice\\mailservice\\repositories\\auctioncorelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|solutionrelative:mailservice\\repositories\\auctioncorelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\mailservice\\mailservice\\models\\mailmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|solutionrelative:mailservice\\models\\mailmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\mailservice\\mailservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|solutionrelative:mailservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\mailservice\\mailservice\\services\\mailreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|solutionrelative:mailservice\\services\\mailreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|c:\\users\\nicol\\onedrive\\dokumenter\\code\\projekt-4sem\\mailservice\\mailservice\\models\\mailmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2A69284-72CD-455D-93F1-821B9611D5A3}|MailService\\MailService.csproj|solutionrelative:mailservice\\models\\mailmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +42,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "DeliveryService.cs",
+              "DocumentMoniker": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Services\\DeliveryService.cs",
+              "RelativeDocumentMoniker": "MailService\\Services\\DeliveryService.cs",
+              "ToolTip": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Services\\DeliveryService.cs",
+              "RelativeToolTip": "MailService\\Services\\DeliveryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T10:16:57.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuctionCoreLogger.cs",
+              "DocumentMoniker": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Repositories\\AuctionCoreLogger.cs",
+              "RelativeDocumentMoniker": "MailService\\Repositories\\AuctionCoreLogger.cs",
+              "ToolTip": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Repositories\\AuctionCoreLogger.cs",
+              "RelativeToolTip": "MailService\\Repositories\\AuctionCoreLogger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T10:13:19.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MailModel.cs",
               "DocumentMoniker": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Models\\MailModel.cs",
               "RelativeDocumentMoniker": "MailService\\Models\\MailModel.cs",
@@ -42,43 +76,44 @@
               "RelativeToolTip": "MailService\\Models\\MailModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T06:20:51.67Z"
+              "WhenOpened": "2024-05-10T06:20:51.67Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Worker.cs",
               "DocumentMoniker": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Worker.cs",
               "RelativeDocumentMoniker": "MailService\\Worker.cs",
               "ToolTip": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Worker.cs",
               "RelativeToolTip": "MailService\\Worker.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAA0AAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAC4AAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T21:13:05.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MailSender.cs",
               "DocumentMoniker": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Services\\MailSender.cs",
               "RelativeDocumentMoniker": "MailService\\Services\\MailSender.cs",
               "ToolTip": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Services\\MailSender.cs",
               "RelativeToolTip": "MailService\\Services\\MailSender.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T20:58:31.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "MailReceiver.cs",
               "DocumentMoniker": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Services\\MailReceiver.cs",
               "RelativeDocumentMoniker": "MailService\\Services\\MailReceiver.cs",
               "ToolTip": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\Services\\MailReceiver.cs",
               "RelativeToolTip": "MailService\\Services\\MailReceiver.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFMAAAALAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAzwDEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T14:19:04.512Z",
               "EditorCaption": ""

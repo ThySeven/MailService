@@ -3,6 +3,7 @@ using System.Net;
 using System.Text.Json;
 using MailService.Models;
 using System.Text;
+using MailService.Repositories;
 
 public class EmailSender
 {
@@ -36,6 +37,7 @@ public class EmailSender
 
             // Send the email
             await _smtpClient.SendMailAsync(message);
+            AuctionCoreLogger.Logger.Info($"Email sent to {mail.ReceiverMail}");
         }
         catch (Exception ex)
         {
