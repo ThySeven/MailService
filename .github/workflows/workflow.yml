@@ -83,9 +83,8 @@ jobs:
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.docker_tag.outputs.tag }}
         platforms: linux/amd64, linux/arm64
-        no-cache: true # Optionally disable cache to rule out caching issues
-        # Add more detailed logging
-        set-output: true
+
+        
     - name: Build and push the Docker image version
       uses: docker/build-push-action@v2
       with:
@@ -94,9 +93,7 @@ jobs:
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.versioning.outputs.new_version }}
         platforms: linux/amd64, linux/arm64
-        no-cache: true # Optionally disable cache to rule out caching issues
-        # Add more detailed logging
-        set-output: true
+
 
     - name: Commit VERSION file change
       run: |
