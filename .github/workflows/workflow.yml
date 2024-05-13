@@ -77,7 +77,7 @@ jobs:
         context: .
         file: Dockerfile
         push: true
-        platforms: linux/amd64,linux/arm64,linux/arm/v7  # Example platforms
+        platforms: linux/amd64,linux/arm64/v8,linux/arm/v7  # Example platforms
         tags: |
           ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.docker_tag.outputs.tag }}
           ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.versioning.outputs.new_version }}
