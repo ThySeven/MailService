@@ -31,7 +31,7 @@ namespace MailService
             using var connection = factory.CreateConnection();
             using var channel = connection.CreateModel();
 
-            channel.QueueDeclare(queue: "MailQueue",
+            channel.QueueDeclare(queue: Environment.GetEnvironmentVariable("RabbitMQQueueName"),
                                  durable: false,
                                  exclusive: false,
                                  autoDelete: false,
@@ -47,7 +47,7 @@ namespace MailService
                 await _deliveryService.SendAsync(message);
             };
 
-            channel.BasicConsume(queue: "MailQueue",
+            channel.BasicConsume(queue: Environment.GetEnvironmentVariable("RabbitMQQueueName"),
                                  autoAck: true,
                                  consumer: mail);
 
