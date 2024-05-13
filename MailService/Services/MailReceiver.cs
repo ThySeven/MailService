@@ -9,6 +9,7 @@ using MailService.Models;
 using RabbitMQ.Client;
 using System.Text;
 using System.Text.Json;
+using MailService.Repositories;
 
 public class EmailReceiver
 {
@@ -45,6 +46,7 @@ public class EmailReceiver
 
                 // Mark the message as "Seen"
                 client.Inbox.SetLabels(uid, new List<string> { "Received" }, true);
+                AuctionCoreLogger.Logger.Info($"Email received from {message.From}");
             }
 
             // Disconnect from the server

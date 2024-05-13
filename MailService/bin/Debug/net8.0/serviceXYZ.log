@@ -2026,3 +2026,94 @@
 2024-05-10 08:57:21.8547|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
 2024-05-10 08:57:21.8547|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
 2024-05-10 08:57:22.2626|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2024-05-10 10:34:35.8175|DEBUG|MailService.Program|init main
+2024-05-10 10:34:37.0944|INFO|MailService|Starting service
+2024-05-10 10:34:37.2459|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-05-10 10:34:37.2964|INFO|MailService|Controllers mapped
+2024-05-10 10:34:37.2964|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-05-10 10:34:37.3364|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 10:34:37.3674|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-62deea1d-8d11-441c-be40-2261222ab494.xml'.
+2024-05-10 10:34:37.3674|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-eaa35d66-8457-471f-9191-ec96edb4d1af.xml'.
+2024-05-10 10:34:37.3854|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {62deea1d-8d11-441c-be40-2261222ab494}.
+2024-05-10 10:34:37.3854|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {eaa35d66-8457-471f-9191-ec96edb4d1af}.
+2024-05-10 10:34:37.3854|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {62deea1d-8d11-441c-be40-2261222ab494} with expiration date 2024-07-21 13:26:32Z as default key.
+2024-05-10 10:34:37.3854|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:34:37.3854|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2024-05-10 10:34:37.3854|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:34:37.3944|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-05-10 10:34:37.3944|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-05-10 10:34:37.3944|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {62deea1d-8d11-441c-be40-2261222ab494} as the default key.
+2024-05-10 10:34:37.3944|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {62deea1d-8d11-441c-be40-2261222ab494} was loaded during application startup.
+2024-05-10 10:34:37.8441|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5143
+2024-05-10 10:34:37.8441|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly MailService
+2024-05-10 10:34:37.8441|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-10 10:34:37.8441|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-10 10:34:37.8441|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\MailService\MailService
+2024-05-10 10:34:37.8441|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-05-10 10:41:00.0479|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJLI9VQG" accepted.
+2024-05-10 10:41:00.0479|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJLI9VQG" started.
+2024-05-10 10:41:00.2721|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5143/user/verify/123456789 - - -
+2024-05-10 10:41:00.2721|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 10:41:00.2721|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/user/verify/123456789'
+2024-05-10 10:41:00.2721|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-05-10 10:41:00.3020|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 10:41:00.3020|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter
+2024-05-10 10:41:00.3020|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-10 10:41:00.3020|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJLI9VQG" completed keep alive response.
+2024-05-10 10:41:00.3020|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5143/user/verify/123456789 - 404 0 - 40.2485ms
+2024-05-10 10:41:00.3020|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5143/user/verify/123456789, Response status code: 404
+2024-05-10 10:41:52.3939|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5143/user/verify/123456789 - - -
+2024-05-10 10:41:52.3939|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJLI9VQH" accepted.
+2024-05-10 10:41:52.3939|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/user/verify/123456789'
+2024-05-10 10:41:52.3939|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJLI9VQH" started.
+2024-05-10 10:41:52.3939|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-05-10 10:41:52.3939|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 10:41:52.3939|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter
+2024-05-10 10:41:52.3939|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJLI9VQG" completed keep alive response.
+2024-05-10 10:41:52.3939|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5143/user/verify/123456789 - 404 0 - 2.8375ms
+2024-05-10 10:41:52.3939|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5143/user/verify/123456789, Response status code: 404
+2024-05-10 10:42:19.1313|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5143/user/verify/123456789 - - -
+2024-05-10 10:42:19.1313|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/user/verify/123456789'
+2024-05-10 10:42:19.1313|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-05-10 10:42:19.1313|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 10:42:19.1313|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter
+2024-05-10 10:42:19.1313|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJLI9VQG" completed keep alive response.
+2024-05-10 10:42:19.1313|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5143/user/verify/123456789 - 404 0 - 2.1216ms
+2024-05-10 10:42:19.1313|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5143/user/verify/123456789, Response status code: 404
+2024-05-10 10:43:08.4492|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPJLI9VQH" received FIN.
+2024-05-10 10:43:08.4492|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPJLI9VQH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:43:08.4492|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJLI9VQH" disconnecting.
+2024-05-10 10:43:08.4492|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJLI9VQH" stopped.
+2024-05-10 10:44:29.6534|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJLI9VQG" disconnecting.
+2024-05-10 10:44:29.6534|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN3GPJLI9VQG" stopped.
+2024-05-10 10:44:29.6534|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN3GPJLI9VQG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 10:48:55.1037|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-05-10 10:48:55.1037|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2024-05-10 10:48:55.1137|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
+2024-05-10 10:50:25.4506|DEBUG|MailService.Program|init main
+2024-05-10 10:50:25.5970|INFO|MailService|Starting service
+2024-05-10 10:50:25.5970|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-05-10 10:50:25.6263|INFO|MailService|Controllers mapped
+2024-05-10 10:50:25.6263|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-05-10 10:50:25.6325|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 10:50:25.6325|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-62deea1d-8d11-441c-be40-2261222ab494.xml'.
+2024-05-10 10:50:25.6325|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nicol\AppData\Local\ASP.NET\DataProtection-Keys\key-eaa35d66-8457-471f-9191-ec96edb4d1af.xml'.
+2024-05-10 10:50:25.6438|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {62deea1d-8d11-441c-be40-2261222ab494}.
+2024-05-10 10:50:25.6438|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {eaa35d66-8457-471f-9191-ec96edb4d1af}.
+2024-05-10 10:50:25.6438|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {62deea1d-8d11-441c-be40-2261222ab494} with expiration date 2024-07-21 13:26:32Z as default key.
+2024-05-10 10:50:25.6438|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:50:25.6438|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2024-05-10 10:50:25.6438|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 10:50:25.6438|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-05-10 10:50:25.6438|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-05-10 10:50:25.6438|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {62deea1d-8d11-441c-be40-2261222ab494} as the default key.
+2024-05-10 10:50:25.6438|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {62deea1d-8d11-441c-be40-2261222ab494} was loaded during application startup.
+2024-05-10 10:50:25.7463|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5143
+2024-05-10 10:50:25.7463|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly MailService
+2024-05-10 10:50:25.7463|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-10 10:50:25.7463|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-10 10:50:25.7463|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\nicol\OneDrive\Dokumenter\Code\Projekt-4Sem\MailService\MailService
+2024-05-10 10:50:25.7463|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-05-10 10:51:40.2884|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-05-10 10:51:40.2884|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping
+2024-05-10 10:51:40.2884|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped
