@@ -16,8 +16,8 @@ jobs:
   prepare:
     outputs:
       reponame: ${{ env.lowercase_repo_name }}
-      tag: ${{ steps.docker_tag.outputs.tag }}
-      version: ${{ steps.versioning.outputs.new_version }}
+      tag: ${{ env.tag }}
+      version: ${{ env.new_version }}
     runs-on: ubuntu-latest
     steps:
     - name: Determine and increment version
@@ -51,8 +51,10 @@ jobs:
         if [[ "${{ github.ref }}" == "refs/heads/dev" ]]; then
           # Using echo and file redirection for setting output with new syntax
           echo "tag=dev" >> $GITHUB_OUTPUT
+          echo "tag=dev" >> $GITHUB_ENV
         else
           echo "tag=latest" >> $GITHUB_OUTPUT
+          echo "tag=latest" >> $GITHUB_ENV
         fi
   
     - name: Display Tag Result
