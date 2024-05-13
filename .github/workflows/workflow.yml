@@ -20,6 +20,10 @@ jobs:
       version: ${{ env.new_version }}
     runs-on: ubuntu-latest
     steps:
+    - name: Check out the repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0 # Important for commit history analysis
     - name: Determine and increment version
       id: versioning
       run: |
