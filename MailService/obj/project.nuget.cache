@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+1BGU4qJGMYZbKFL/R7SOA67wBfrHaeD7sWC0YoVdHO/CVhrYbqqfS/vzoLgKaVQA+ry6EUsYZf56ssfpZzdbQ==",
+  "dgSpecHash": "06/GJve2f6WSF6wYFv87ZkuRkHp7ysshBVeCPs8mixnkzAi3Vy8KdiQ3hE9W7ytvKr8KQ7eRzDAxHX424fT/Zw==",
   "success": true,
   "projectFilePath": "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\MailService\\MailService\\MailService.csproj",
   "expectedPackageFiles": [
@@ -42,7 +42,13 @@
     "C:\\Users\\JeffS\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\JeffS\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512",
     "C:\\Users\\JeffS\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
-    "C:\\Users\\JeffS\\.nuget\\packages\\vaultsharp\\1.13.0.1\\vaultsharp.1.13.0.1.nupkg.sha512"
+    "C:\\Users\\JeffS\\.nuget\\packages\\vaultsharp\\1.13.0.1\\vaultsharp.1.13.0.1.nupkg.sha512",
+    "C:\\Users\\JeffS\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-arm64\\8.0.1\\microsoft.netcore.app.runtime.linux-arm64.8.0.1.nupkg.sha512",
+    "C:\\Users\\JeffS\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.1\\microsoft.aspnetcore.app.runtime.win-x64.8.0.1.nupkg.sha512",
+    "C:\\Users\\JeffS\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.1\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.1.nupkg.sha512",
+    "C:\\Users\\JeffS\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-arm64\\8.0.1\\microsoft.aspnetcore.app.runtime.linux-arm64.8.0.1.nupkg.sha512",
+    "C:\\Users\\JeffS\\.nuget\\packages\\microsoft.netcore.app.host.linux-arm64\\8.0.1\\microsoft.netcore.app.host.linux-arm64.8.0.1.nupkg.sha512",
+    "C:\\Users\\JeffS\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.1\\microsoft.netcore.app.runtime.win-x64.8.0.1.nupkg.sha512"
   ],
   "logs": []
 }
