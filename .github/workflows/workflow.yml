@@ -82,8 +82,8 @@ jobs:
       - run: |
           docker buildx build \
             --platform linux/amd64 \
-            --tag ${{ secrets.DOCKERHUB_USERNAME }}/my-image:${{ needs.prepare.outputs.tag }} \
-            --tag ${{ secrets.DOCKERHUB_USERNAME }}/my-image:${{ needs.prepare.outputs.version }} \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.docker_tag.outputs.tag }} \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.versioning.outputs.new_version }} \
             --push .
 
   build_arm64:
@@ -96,8 +96,8 @@ jobs:
       - run: |
           docker buildx build \
             --platform linux/arm64 \
-            --tag ${{ secrets.DOCKERHUB_USERNAME }}/my-image:${{ needs.prepare.outputs.tag }} \
-            --tag ${{ secrets.DOCKERHUB_USERNAME }}/my-image:${{ needs.prepare.outputs.version }} \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.docker_tag.outputs.tag }} \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.versioning.outputs.new_version }} \
             --push .
             
   commit_version:
