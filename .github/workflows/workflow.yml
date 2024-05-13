@@ -82,7 +82,7 @@ jobs:
         file: Dockerfile
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.docker_tag.outputs.tag }}
-        platforms: linux/amd64, linux/arm64
+        platforms: linux/amd64
         no-cache: true # Optionally disable cache to rule out caching issues
         # Add more detailed logging
         set-output: true
