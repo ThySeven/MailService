@@ -78,7 +78,6 @@ jobs:
         file: Dockerfile
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.docker_tag.outputs.tag }}
-        platforms: linux/amd64, linux/arm64
 
         
     - name: Build and push the Docker image version
@@ -88,7 +87,6 @@ jobs:
         file: Dockerfile
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.versioning.outputs.new_version }}
-        platforms: linux/amd64, linux/arm64
 
 
     - name: Commit VERSION file change
