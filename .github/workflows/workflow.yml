@@ -58,7 +58,10 @@ jobs:
         fi
   
     - name: Display Tag Result
-      run: echo "The determined tag is ${{ steps.docker_tag.outputs.tag }}"
+      run: echo "The determined tag is ${{ env.tag }}"
+
+    - name: Display Version
+      run: echo "${{ env.new_version }}"
 
     - name: Convert repository name to lowercase
       id: lowercase_repo_name
@@ -77,8 +80,8 @@ jobs:
       - run: |
           docker buildx build \
             --platform linux/amd64 \
-            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ needs.prepare.outputs.reponame }}:${{ needs.prepare.steps.docker_tag.outputs.tag }} \
-            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ needs.prepare.outputs.reponame }}:${{ needs.prepare.steps.versioning.outputs.new_version }} \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ needs.prepare.outputs.reponame }}:${{ needs.prepare.outputs.tag }} \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ needs.prepare.outputs.reponame }}:${{ needs.prepare.outputs.version }} \
             --push .
 
   build_arm64:
