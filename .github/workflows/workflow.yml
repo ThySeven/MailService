@@ -75,8 +75,8 @@ jobs:
       - run: |
           docker buildx build \
             --platform linux/amd64 \
-            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ prepare.steps.docker_tag.outputs.tag }} \
-            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ prepare.steps.versioning.outputs.new_version }} \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ needs.prepare.outputs.reponame }}:${{ needs.prepare.steps.docker_tag.outputs.tag }} \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ needs.prepare.outputs.reponame }}:${{ needs.prepare.steps.versioning.outputs.new_version }} \
             --push .
 
   build_arm64:
