@@ -2992,19 +2992,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nicol\\.nuget\\packages\\": {}
+    "C:\\Users\\JeffS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService.test\\MailService.test.csproj",
+      "projectUniqueName": "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\MailService\\MailService.test\\MailService.test.csproj",
       "projectName": "MailService.test",
-      "projectPath": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService.test\\MailService.test.csproj",
-      "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService.test\\obj\\",
+      "projectPath": "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\MailService\\MailService.test\\MailService.test.csproj",
+      "packagesPath": "C:\\Users\\JeffS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\MailService\\MailService.test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JeffS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3018,8 +3018,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\MailService.csproj": {
-              "projectPath": "C:\\Users\\nicol\\OneDrive\\Dokumenter\\Code\\Projekt-4Sem\\MailService\\MailService\\MailService.csproj"
+            "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\MailService\\MailService\\MailService.csproj": {
+              "projectPath": "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\MailService\\MailService\\MailService.csproj"
             }
           }
         }
@@ -3030,9 +3030,7 @@
         ]
       },
       "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
+        "enableAudit": "default"
       }
     },
     "frameworks": {
@@ -3080,7 +3078,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
