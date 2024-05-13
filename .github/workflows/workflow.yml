@@ -50,11 +50,13 @@ jobs:
         echo "$NEW_VERSION" > VERSION
         echo "::set-output name=new_version::$NEW_VERSION"
         echo "new_version=$NEW_VERSION" >> $GITHUB_ENV
+        
     - name: Extract repository name
       id: repo_name
       run: |
         REPO_NAME="${GITHUB_REPOSITORY#*/}"
         echo "::set-output name=name::$REPO_NAME"
+        
     - name: Determine tag for the Docker image
       id: docker_tag
       run: |
@@ -82,8 +84,8 @@ jobs:
       - run: |
           docker buildx build \
             --platform linux/amd64 \
-            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.docker_tag.outputs.tag }} \
-            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.versioning.outputs.new_version }} \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ prepare.steps.docker_tag.outputs.tag }} \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ prepare.steps.versioning.outputs.new_version }} \
             --push .
 
   build_arm64:
@@ -96,8 +98,8 @@ jobs:
       - run: |
           docker buildx build \
             --platform linux/arm64 \
-            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.docker_tag.outputs.tag }} \
-            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.versioning.outputs.new_version }} \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ prepare.steps.docker_tag.outputs.tag }} \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ prepare.steps.versioning.outputs.new_version }} \
             --push .
             
   commit_version:
@@ -112,7 +114,7 @@ jobs:
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Actions"
             git add VERSION
-            git commit -m "Update version to ${{ steps.versioning.outputs.new_version }}"
+            git commit -m "Update version to ${{ prepare.steps.versioning.outputs.new_version }}"
             git push
           fi
 
