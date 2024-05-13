@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 jobs:
-  build_and_push:
+  prepare:
     runs-on: ubuntu-latest
     steps:
     - name: Check out the repository
@@ -72,27 +72,70 @@ jobs:
       id: lowercase_repo_name
       run: echo "lowercase_repo_name=$(echo '${{ steps.repo_name.outputs.name }}' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
 
+  build_amd64:
+    needs: prepare
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
+      - run: docker buildx create --use
+      - run: |
+          docker buildx build \
+            --platform linux/amd64 \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/my-image:${{ needs.prepare.outputs.tag }} \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/my-image:${{ needs.prepare.outputs.version }} \
+            --push .
 
-    - name: Build and push the Docker image with Buildx for multi-platform
-      uses: docker/build-push-action@v2
-      with:
-        context: .
-        file: Dockerfile
-        push: true
-        platforms: linux/amd64,linux/arm64
-        tags: |
-          ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.docker_tag.outputs.tag }}
-          ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.versioning.outputs.new_version }}
+  build_arm64:
+    needs: prepare
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
+      - run: docker buildx create --use
+      - run: |
+          docker buildx build \
+            --platform linux/arm64 \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/my-image:${{ needs.prepare.outputs.tag }} \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/my-image:${{ needs.prepare.outputs.version }} \
+            --push .
+            
+  commit_version:
+    needs: [build_amd64, build_arm64]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          if git diff --exit-code --quiet VERSION; then
+            echo "VERSION file has not changed. Skipping commit."
+          else
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Actions"
+            git add VERSION
+            git commit -m "Update version to ${{ steps.versioning.outputs.new_version }}"
+            git push
+          fi
+
+   # - name: Build and push the Docker image with Buildx for multi-platform
+   #   uses: docker/build-push-action@v2
+   #   with:
+   #     context: .
+   #     file: Dockerfile
+   #     push: true
+   #     platforms: linux/amd64,linux/arm64
+   #     tags: |
+   #       ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.docker_tag.outputs.tag }}
+   #       ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.lowercase_repo_name }}:${{ steps.versioning.outputs.new_version }}
 
 
-    - name: Commit VERSION file change
-      run: |
-        if git diff --exit-code --quiet VERSION; then
-          echo "VERSION file has not changed. Skipping commit."
-        else
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Actions"
-          git add VERSION
-          git commit -m "Update version to ${{ steps.versioning.outputs.new_version }}"
-          git push
-        fi
+    #- name: Commit VERSION file change
+    #  run: |
+    #    if git diff --exit-code --quiet VERSION; then
+    #      echo "VERSION file has not changed. Skipping commit."
+    #    else
+    #      git config --local user.email "action@github.com"
+    #      git config --local user.name "GitHub Actions"
+    #      git add VERSION
+    #      git commit -m "Update version to ${{ steps.versioning.outputs.new_version }}"
+    #      git push
+    #    fi
