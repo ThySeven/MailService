@@ -42,9 +42,16 @@ namespace MailService
             {
                 var mail = ea.Body.ToArray();
                 var uftString = Encoding.UTF8.GetString(mail);
-                var message = JsonSerializer.Deserialize<MailModel>(uftString);
+                try
+                {
+                    var message = JsonSerializer.Deserialize<MailModel>(uftString);
 
-                await _deliveryService.SendAsync(message);
+                    await _deliveryService.SendAsync(message);
+                }
+                catch(Exception ex)
+                {
+                    AuctionCoreLogger.Logger.Error("Failed to recieve mail " + ex);
+                }
             };
 
             channel.BasicConsume(queue: Environment.GetEnvironmentVariable("RabbitMQQueueName"),
