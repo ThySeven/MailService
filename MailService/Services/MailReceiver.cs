@@ -13,7 +13,7 @@ using MailService.Repositories;
 
 public class EmailReceiver
 {
-    private string senderMail = "gronogolsen@gmail.com";
+    private string _senderMail = "gronogolsen@gmail.com";
     public EmailReceiver()
     {
         
@@ -27,7 +27,7 @@ public class EmailReceiver
             client.Connect("imap.gmail.com", 993, true);
 
             // Authenticate with the server
-            client.Authenticate(senderMail, "xvgu reqj vpod mbms");
+            client.Authenticate(_senderMail, "xvgu reqj vpod mbms");
 
             // Select the inbox folder
             client.Inbox.Open(FolderAccess.ReadWrite);
@@ -73,7 +73,7 @@ public class EmailReceiver
                 Content = File.ReadAllText("Models/Compliments.html"),
             };
 
-            if (receiverMail.Contains(senderMail))
+            if (senderMail.Contains(_senderMail))
             {
                 AuctionCoreLogger.Logger.Info($"Email received from {message.From}, will not answer to self");
             }
