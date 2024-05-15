@@ -45,7 +45,6 @@ namespace MailService
                 try
                 {
                     var message = JsonSerializer.Deserialize<MailModel>(uftString);
-
                     await _deliveryService.SendAsync(message);
                 }
                 catch(Exception ex)

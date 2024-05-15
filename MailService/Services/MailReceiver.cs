@@ -13,7 +13,7 @@ using MailService.Repositories;
 
 public class EmailReceiver
 {
-
+    private string _senderMail = "gronogolsen@gmail.com";
     public EmailReceiver()
     {
 
@@ -27,7 +27,7 @@ public class EmailReceiver
             client.Connect("imap.gmail.com", 993, true);
 
             // Authenticate with the server
-            client.Authenticate("gronogolsen@gmail.com", "xvgu reqj vpod mbms");
+            client.Authenticate(_senderMail, "xvgu reqj vpod mbms");
 
             // Select the inbox folder
             client.Inbox.Open(FolderAccess.ReadWrite);
@@ -47,6 +47,7 @@ public class EmailReceiver
                 // Mark the message as "Seen"
                 client.Inbox.SetLabels(uid, new List<string> { "Received" }, true);
                 AuctionCoreLogger.Logger.Info($"Email received from {message.From}");
+
             }
 
             // Disconnect from the server
@@ -72,8 +73,15 @@ public class EmailReceiver
                 Content = File.ReadAllText("Models/Compliments.html"),
             };
 
-            // Send the email to RabbitMQ
-            SendToRabbitMQ(mail);
+            if (senderMail.Contains(_senderMail))
+            {
+                AuctionCoreLogger.Logger.Info($"Email received from {message.From}, will not answer to self");
+            }
+            else
+            {
+                // Send the email to RabbitMQ
+                SendToRabbitMQ(mail);
+            }
         }
         catch (Exception ex)
         {
@@ -94,6 +102,7 @@ public class EmailReceiver
             var serializedEmail = JsonSerializer.Serialize(mail);
 
             // Publish the serialized email data to RabbitMQ
+
             channel.QueueDeclare(queue: Environment.GetEnvironmentVariable("RabbitMQQueueName"),
                                           durable: false,
                                           exclusive: false,
