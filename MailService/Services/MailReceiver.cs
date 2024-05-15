@@ -16,7 +16,7 @@ public class EmailReceiver
     private string _senderMail = "gronogolsen@gmail.com";
     public EmailReceiver()
     {
-        
+
     }
 
     public void ListenAndSendToRabbitMQ()
@@ -102,14 +102,15 @@ public class EmailReceiver
             var serializedEmail = JsonSerializer.Serialize(mail);
 
             // Publish the serialized email data to RabbitMQ
-            channel.QueueDeclare(queue: "RabbitMQQueueName",
+
+            channel.QueueDeclare(queue: Environment.GetEnvironmentVariable("RabbitMQQueueName"),
                                           durable: false,
                                           exclusive: false,
                                           autoDelete: false,
                                           arguments: null);
 
             channel.BasicPublish(exchange: "",
-                                          routingKey: "RabbitMQQueueName",
+                                          routingKey: Environment.GetEnvironmentVariable("RabbitMQQueueName"),
                                           basicProperties: null,
                                           body: Encoding.UTF8.GetBytes(serializedEmail));
 
