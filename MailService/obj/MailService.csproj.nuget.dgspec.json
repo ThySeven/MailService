@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\MailService\\MailService\\MailService.csproj": {}
+    "/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/MailService/MailService/MailService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\MailService\\MailService\\MailService.csproj": {
+    "/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/MailService/MailService/MailService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\MailService\\MailService\\MailService.csproj",
+        "projectUniqueName": "/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/MailService/MailService/MailService.csproj",
         "projectName": "MailService",
-        "projectPath": "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\MailService\\MailService\\MailService.csproj",
-        "packagesPath": "C:\\Users\\JeffS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JeffS\\Dropbox\\EAAA\\4.Semester\\Projekt\\MailService\\MailService\\obj\\",
+        "projectPath": "/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/MailService/MailService/MailService.csproj",
+        "packagesPath": "/Users/nicolajorluff/.nuget/packages/",
+        "outputPath": "/Users/nicolajorluff/Documents/IT-Arkitektur/4. Semester/Projekt/MailService/MailService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\JeffS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/nicolajorluff/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,9 +33,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -109,15 +105,15 @@
               "version": "[8.0.1, 8.0.1]"
             },
             {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.1, 8.0.1]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Runtime.linux-arm64",
               "version": "[8.0.1, 8.0.1]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[8.0.1, 8.0.1]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
               "version": "[8.0.1, 8.0.1]"
             }
           ],
@@ -129,7 +125,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
