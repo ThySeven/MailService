@@ -91,34 +91,42 @@ public class EmailReceiver
 
     private void SendToRabbitMQ(MailModel mail)
     {
-        try
+        bool sent = false;
+        while (!sent)
         {
-            var factory = new ConnectionFactory { HostName = Environment.GetEnvironmentVariable("RabbitMQHostName") };
+            try
+            {
+                var factory = new ConnectionFactory { HostName = Environment.GetEnvironmentVariable("RabbitMQHostName") };
 
-            using var connection = factory.CreateConnection();
-            using var channel = connection.CreateModel();
+                using var connection = factory.CreateConnection();
+                using var channel = connection.CreateModel();
 
-            // Serialize the received email data
-            var serializedEmail = JsonSerializer.Serialize(mail);
+                // Serialize the received email data
+                var serializedEmail = JsonSerializer.Serialize(mail);
 
-            // Publish the serialized email data to RabbitMQ
+                // Publish the serialized email data to RabbitMQ
 
-            channel.QueueDeclare(queue: Environment.GetEnvironmentVariable("RabbitMQQueueName"),
-                                          durable: false,
-                                          exclusive: false,
-                                          autoDelete: false,
-                                          arguments: null);
+                channel.QueueDeclare(queue: Environment.GetEnvironmentVariable("RabbitMQQueueName"),
+                                              durable: false,
+                                              exclusive: false,
+                                              autoDelete: false,
+                                              arguments: null);
 
-            channel.BasicPublish(exchange: "",
-                                          routingKey: Environment.GetEnvironmentVariable("RabbitMQQueueName"),
-                                          basicProperties: null,
-                                          body: Encoding.UTF8.GetBytes(serializedEmail));
+                channel.BasicPublish(exchange: "",
+                                              routingKey: Environment.GetEnvironmentVariable("RabbitMQQueueName"),
+                                              basicProperties: null,
+                                              body: Encoding.UTF8.GetBytes(serializedEmail));
 
-            Console.WriteLine("Sent email to RabbitMQ: " + serializedEmail);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error sending email to RabbitMQ: {ex.Message}");
+                Console.WriteLine("Sent email to RabbitMQ: " + serializedEmail);
+                sent = true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error sending email to RabbitMQ: {ex.Message}");
+                AuctionCoreLogger.Logger.Error($"Failed to send email - Retrying in 5 seconds\n {ex}");
+                sent = false;
+                Task.Delay(5000);
+            }
         }
     }
 }
