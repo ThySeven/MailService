@@ -22,27 +22,34 @@ public class EmailSender
 
     public async Task SendMailAsync(MailModel mail)
     {
-        try
+        bool sent = false;
+        while (!sent)
         {
-            // Convert MailModel to JSON string
-            var jsonString = JsonSerializer.Serialize(mail);
-
-            // Create a new email message
-            var message = new MailMessage("gronogolsen@gmail.com", mail.ReceiverMail)
+            try
             {
-                Subject = mail.Header,
-                Body = mail.Content,
-                IsBodyHtml = true
-            };
+                // Convert MailModel to JSON string
+                var jsonString = JsonSerializer.Serialize(mail);
 
-            // Send the email
-            await _smtpClient.SendMailAsync(message);
-            AuctionCoreLogger.Logger.Info($"Email sent to {mail.ReceiverMail}");
-        }
-        catch (Exception ex)
-        {
-            // Handle any exceptions
-            Console.WriteLine($"Error sending email: {ex.Message}");
+                // Create a new email message
+                var message = new MailMessage("gronogolsen@gmail.com", mail.ReceiverMail)
+                {
+                    Subject = mail.Header,
+                    Body = mail.Content,
+                    IsBodyHtml = true
+                };
+
+                // Send the email
+                await _smtpClient.SendMailAsync(message);
+                AuctionCoreLogger.Logger.Info($"Email sent to {mail.ReceiverMail}");
+                sent = true;
+            }
+            catch (Exception ex)
+            {
+                sent = false;
+                // Handle any exceptions
+                AuctionCoreLogger.Logger.Error($"Failed to send email to {mail.ReceiverMail}\n {ex.Message}");
+                Console.WriteLine($"Error sending email: {ex.Message}");
+            }
         }
     }
 }
